@@ -1,8 +1,10 @@
 <?php
 
-// Get the current response code and set a new one
-var_dump(http_response_code(503));
+// Show all information, defaults to INFO_ALL
+phpinfo();
 
-// Get the new response code
-var_dump(http_response_code());
-?> 
+// Show just the module information.
+// phpinfo(8) yields identical results.
+phpinfo(INFO_MODULES);
+
+?>
